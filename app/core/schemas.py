@@ -7,12 +7,13 @@ class CustomerFeatures(BaseModel):
     Age: int
     Tenure: int
     Balance: float
-    NumofProducts: int
+    NumOfProducts: int
     HasCrCard: int
     IsActiveMember: int
     EstimatedSalary: float
 
 class PredictionResponse(BaseModel):
     churn_probability: float
+    prediction: str
     explanation: dict #SHAP values explanation (feature impacts)
-
+    interpretation: str

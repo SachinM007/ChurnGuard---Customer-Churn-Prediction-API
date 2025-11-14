@@ -3,8 +3,8 @@ import os
 
 from xgboost import XGBClassifier
 
-MODEL_PATH = r"..\app\models\churn_model_v1.pkl"
-ENCODER_PATH = r"..\data\processed\label_encoders.pkl"
+MODEL_PATH = "../app/models/churn_model_v1.pkl"
+ENCODER_PATH = "../data/processed/label_encoders.pkl"
 
 
 def load_model() -> XGBClassifier:

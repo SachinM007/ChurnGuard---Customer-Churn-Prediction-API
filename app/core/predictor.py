@@ -33,11 +33,3 @@ def preprocess_input(data: dict, encoders: dict) -> pd.DataFrame:
 
     return df
 
-def predict(model, processed_df: pd.DataFrame) -> float:
-    """
-    Returns the churn probability
-    """
-
-    proba = model.predict_proba(processed_df)[:,1][0]
-
-    return float(proba)
