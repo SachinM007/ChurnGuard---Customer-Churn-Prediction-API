@@ -10,5 +10,6 @@ matplotlib
 seaborn
 scikit-learn
 optuna
+shap
 
 -e .
